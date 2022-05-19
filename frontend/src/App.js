@@ -6,6 +6,8 @@ import Header from './components/Header'
 import Footer from './components/Footer';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import Signin from './screens/Signin';
+import Signup from './screens/Signup';
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,6 +17,8 @@ const App = () => {
          <Routes>
           <Route path="/" element={<HomeScreen/>} exact/>
           <Route path="/product/:id" element={<ProductScreen/>} exact/>
+          <Route path="/login" element={<Signin/>} exact/>
+          <Route path="/register" element={<Signup/>} exact/>
          </Routes>
          </Container>
        </main>
