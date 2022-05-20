@@ -13,19 +13,15 @@ const Useradmin = () => {
                         <tr>
                             <th><h3>id</h3></th>
                             <th><h3>name</h3></th>
-                            <th><h3>Price</h3></th>
-                            <th><h3>Category</h3></th>
-                            <th><h3>Brand</h3></th>
+                            <th><h3>email</h3></th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>8ds734bf7f39c73ffb3894fb</td>
-                            <td>Pinnk saree</td>
-                            <td>890</td>
-                            <td>cotton</td>
-                            <td>Anoor</td>
+                            <td>Noor Arfin</td>
+                            <td>noorarfin7728@gmail.com</td>
                             <td>
                             <Row className='m-0 p-0'>
                                 <Col className='text-center bg-white'>
@@ -39,10 +35,8 @@ const Useradmin = () => {
                         </tr>
                         <tr>
                             <td>8ds734bf7f39c73ffb3894fb</td>
-                            <td>Red floral Saree</td>
-                            <td>$500</td>
-                            <td>Silk</td>
-                            <td>Floral</td>
+                            <td>Ranjith</td>
+                            <td>ranjith7125@gmail.com</td>
                             <td>
                             <Row className='m-0 p-0' >
                                 <Col className='text-center bg-white'>
@@ -56,10 +50,8 @@ const Useradmin = () => {
                         </tr>
                         <tr>
                         <   td>8ds734bf7f39c73ffb3894fb</td>
-                            <td>reddragon</td>
-                            <td>1000</td>
-                            <td>cotton</td>
-                            <td>foral</td>
+                            <td>Nanthini</td>
+                            <td>nanthinir.19cse@kongu.edu</td>
                             <td>
                             <Row className='m-0 p-0' >
                                 <Col className='text-center bg-white'>
