@@ -23,27 +23,30 @@ const Shipping = () => {
             <Form.Label>Phone Number</Form.Label>
             <Form.Control type="number" className='w-75' placeholder="Enter phone number" />
         </Form.Group>
+        <Form.Label className='h1'> ADDRESS </Form.Label>
         <Form.Group className="mb-3 mt-4" controlId="formGroupEmail">
-            <Form.Label>Address</Form.Label>
-            <Form.Control type="textarea" className='w-75' placeholder="Enter address" />
+            <Form.Label>Streat Address</Form.Label>
+            <Form.Control type="text" className='w-75' placeholder="Enter address" />
+        </Form.Group>
+        <Form.Group className="mb-3 mt-4" controlId="formGroupEmail">
+            <Form.Label>Town/City</Form.Label>
+            <Form.Control type="text" className='w-75' placeholder="Enter city" />
+        </Form.Group>
+        <Form.Group className="mb-3 mt-4" controlId="formGroupEmail">
+            <Form.Label>State/Country</Form.Label>
+            <Form.Control type="text" className='w-75' placeholder="Enter state" />
         </Form.Group>
         <Form.Group className="mb-3 mt-4" controlId="formGroupPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" className='w-75'  placeholder="Password" />
+            <Form.Label>Postcode/Zip</Form.Label>
+            <Form.Control type="number" className='w-75'  placeholder="Enter the postcode" />
+        </Form.Group>
+        <Form.Group className="mb-3 mt-4" controlId="formGroupEmail">
+            <Form.Label>Add Notes(optional)</Form.Label>
+            <Form.Control type="textarea" className='w-75' placeholder="Tell your suggestions to imporove our better" />
         </Form.Group>
         <Link className='btn btn-dark my-3 mt-4' to='/'>
-           Shipping
+           Place Order
         </Link>
-        <Form.Group className="mb-3">
-            <Form.Label className="d-flex">
-                New Customer? 
-                <p>
-                <Link className='text-grey' to='/register'>
-                Submit
-                </Link>
-                </p>
-            </Form.Label>
-        </Form.Group>
         </Form>
        </div>
     </div>
