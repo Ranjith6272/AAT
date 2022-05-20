@@ -16,21 +16,21 @@ const HomeScreen = () => {
         </Col>
         <Col md={6}>
           <Carousel className="justify-content-center">
-          <Carousel.Item className="text-center">
+          <Carousel.Item className="text-center" interval={1400}>
               <img
                 className="img-responsive center-block d-block mx-auto"
                 src="/images/redsaree1.png"
                 alt="First slide"
               />
           </Carousel.Item>
-          <Carousel.Item >
+          <Carousel.Item interval={1400}>
             <img
               className="img-responsive center-block d-block mx-auto"
               src="/images/pinksaree.png"
               alt="Second slide"
             />
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item interval={1400}>
             <img
               className="img-responsive center-block d-block mx-auto"
               src="/images/redpattu.png"
