@@ -8,6 +8,8 @@ import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import Signin from './screens/Signin';
 import Signup from './screens/Signup';
+import Placeorder from './screens/Placeorder';
+import Useradmin from './screens/Useradmin';
 const App = () => {
   return (
     <BrowserRouter>
@@ -19,6 +21,8 @@ const App = () => {
           <Route path="/product/:id" element={<ProductScreen/>} exact/>
           <Route path="/login" element={<Signin/>} exact/>
           <Route path="/register" element={<Signup/>} exact/>
+          <Route path="/placeorder" element={<Placeorder/>} exact/>
+          <Route path="/useradmin" element={<Useradmin/>} exact/>
          </Routes>
          </Container>
        </main>

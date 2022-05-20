@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { Link,useParams } from 'react-router-dom';
-import {Row,Col,Image,ListGroup,Card,ListGroupItem,Button} from 'react-bootstrap'
+import {Row,Col,Image,ListGroup,Card,ListGroupItem,Button,Alert} from 'react-bootstrap'
 import Rating from '../components/Rating'
 import {products} from '../products'
 
@@ -86,20 +86,53 @@ const ProductScreen = ({match})=>{
          </Card>
        </Col>
      </Row>
-     <Row>
-       {/* <Col md={6}>
+     <Row className='mt-3'>
+       <Col md={6}>
         <ListGroup variant='flush'>
           <ListGroupItem>
             <h4 className='text-uppercase'>
                reviews
             </h4>
           </ListGroupItem>
-          <ListGroupItem>
-            <p>Ranjith</p>
-             
+          <ListGroupItem className='mx-4'>
+            <Row>
+             <span className='text-muted'>Yamini</span>
+             <Rating value={product.rating}/>
+             <span className='text-muted'>2020-09-27</span>
+            </Row>
+            <Row>
+            <p className='text-secondary'> These are great saree!</p>
+            </Row>
+          </ListGroupItem>
+          <ListGroupItem className='mx-4'>
+            <Row>
+             <span className='text-muted'>Ankita</span>
+             <Rating value={product.rating}/>
+             <span className='text-muted'>2020-09-24</span>
+            </Row>
+            <Row>
+            <p className='text-secondary'> Nice Color.I like it</p>
+            </Row>
           </ListGroupItem>
         </ListGroup>
-       </Col> */}
+        <ListGroup variant='flush'>
+          <ListGroupItem>
+            <h3 className='text-uppercase'>Write a customer review</h3>
+            <>
+            {[
+                'info',
+              ].map((variant) => (
+                <Alert key={variant} variant={variant}>
+                  <span className='pr-2'>Please</span> 
+                  <Alert.Link href="/login" className='pr-2'> 
+                      sign in</Alert.Link>
+                   to write a review
+                </Alert>
+              ))}
+            </>
+          </ListGroupItem>
+        </ListGroup>
+       </Col>
      </Row>
   </>
 }
