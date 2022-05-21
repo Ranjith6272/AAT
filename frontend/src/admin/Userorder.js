@@ -1,7 +1,6 @@
 import React from 'react'
 import {Row,Col,Table} from 'react-bootstrap'
-// import {FaEdit} from 'react-icons/fa'
-import {MdDelete} from 'react-icons/md'
+import { BsFillHandThumbsUpFill, BsFillHandThumbsDownFill } from "react-icons/bs";
 
 const Useradmin = () => {
   return (
@@ -9,56 +8,52 @@ const Useradmin = () => {
         <div className='mb-4'>
             <Row>
                 <Col md={12} sm={6} className='text-center '>
-                    <span><h3>aat User details</h3></span>
+                    <span><h3>aat order details</h3></span>
                 </Col>
             </Row>
         </div>
-        
         <Row>
             <Col md={12} sm={6}>
                 <Table responsive striped hover size='sm'>
                     <thead>
                         <tr>
                             <th><h4>id</h4></th>
-                            <th><h4>name</h4></th>
-                            <th><h4>email</h4></th>
+                            <th><h4>user</h4></th>
+                            <th><h4>date</h4></th>
+                            <th><h4>total</h4></th>
+                            <th><h4>paid</h4></th>
+                            <th><h4>Delivered</h4></th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>8ds734bf7f39c73ffb3894fb</td>
-                            <td>Noor Arfin</td>
-                            <td>noorarfin7728@gmail.com</td>
+                            <td>Nanthini</td>
+                            <td>2022-05-21</td>
+                            <td>$500</td>
+                            <td>2022-05-21</td>
+                            <td>
+                                <BsFillHandThumbsDownFill className='text-danger'/>
+                            </td>
                             <td>
                             <Row className='m-0 p-1'>
-                                <Col className='text-center bg-danger'>
-                                   <MdDelete className='text-white'/>
-                                </Col>
+                                Details
                             </Row>
                             </td>
                         </tr>
                         <tr>
                             <td>8ds734bf7f39c73ffb3894fb</td>
-                            <td>Ranjith</td>
-                            <td>ranjith7125@gmail.com</td>
+                            <td>Aliabhat</td>
+                            <td>2022-05-15</td>
+                            <td>$1000</td>
+                            <td>2022-05-15</td>
                             <td>
-                            <Row className='m-0 p-1' >
-                                <Col className='text-center bg-danger'>
-                                   <MdDelete className='text-white'/>
-                                </Col>
-                            </Row>
+                                <BsFillHandThumbsUpFill className='text-success'/>
                             </td>
-                        </tr>
-                        <tr>
-                        <   td>8ds734bf7f39c73ffb3894fb</td>
-                            <td>Nanthini</td>
-                            <td>nanthinir.19cse@kongu.edu</td>
                             <td>
                             <Row className='m-0 p-1' >
-                                <Col className='text-center bg-danger'>
-                                   <MdDelete className='text-white'/>
-                                </Col>
+                                Details
                             </Row>
                             </td>
                         </tr>

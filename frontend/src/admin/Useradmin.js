@@ -6,16 +6,23 @@ import {MdDelete} from 'react-icons/md'
 const Useradmin = () => {
   return (
     <div>
+        <div className='mb-4'>
+            <Row>
+                <Col md={12} sm={6} className='text-center '>
+                    <span><h3>aat Product details</h3></span>
+                </Col>
+            </Row>
+        </div>
         <Row>
             <Col md={12} sm={6}>
-                <Table responsive striped bordered hover size='sm'>
+                <Table responsive striped hover size='sm'>
                     <thead>
                         <tr>
-                            <th><h3>id</h3></th>
-                            <th><h3>name</h3></th>
-                            <th><h3>Price</h3></th>
-                            <th><h3>Category</h3></th>
-                            <th><h3>Brand</h3></th>
+                            <th><h4>id</h4></th>
+                            <th><h4>name</h4></th>
+                            <th><h4>Price</h4></th>
+                            <th><h4>Category</h4></th>
+                            <th><h4>Brand</h4></th>
                             <th></th>
                         </tr>
                     </thead>
@@ -27,7 +34,7 @@ const Useradmin = () => {
                             <td>cotton</td>
                             <td>Anoor</td>
                             <td>
-                            <Row className='m-0 p-0'>
+                            <Row className='m-0 p-1'>
                                 <Col className='text-center bg-white'>
                                    <FaEdit/>
                                 </Col>
@@ -44,7 +51,7 @@ const Useradmin = () => {
                             <td>Silk</td>
                             <td>Floral</td>
                             <td>
-                            <Row className='m-0 p-0' >
+                            <Row className='m-0 p-1' >
                                 <Col className='text-center bg-white'>
                                    <FaEdit/>
                                 </Col>
@@ -61,7 +68,7 @@ const Useradmin = () => {
                             <td>cotton</td>
                             <td>foral</td>
                             <td>
-                            <Row className='m-0 p-0' >
+                            <Row className='m-0 p-1' >
                                 <Col className='text-center bg-white'>
                                    <FaEdit/>
                                 </Col>

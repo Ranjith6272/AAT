@@ -11,6 +11,8 @@ import Signup from './screens/Signup';
 import Placeorder from './screens/Placeorder';
 import Useradmin from './admin/Useradmin';
 import Userdetails from './admin/Userdetails';
+import Userorder from './admin/Userorder';
+import Edituser from './admin/Edituser';
 import Cart from './screens/Cart';
 const App = () => {
   return (
@@ -26,6 +28,8 @@ const App = () => {
           <Route path="/placeorder" element={<Placeorder/>} exact/>
           <Route path="/useradmin" element={<Useradmin/>} exact/>
           <Route path="/userdetails" element={<Userdetails/>} exact/>
+          <Route path="/userorder" element={<Userorder/>} exact/>
+          <Route path="/edituser" element={<Edituser/>} exact/>
           <Route path="/cart" element={<Cart/>} exact/>
          </Routes>
          </Container>
