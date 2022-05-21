@@ -9,7 +9,9 @@ import ProductScreen from './screens/ProductScreen';
 import Signin from './screens/Signin';
 import Signup from './screens/Signup';
 import Placeorder from './screens/Placeorder';
-import Useradmin from './screens/Useradmin';
+import Useradmin from './admin/Useradmin';
+import Userdetails from './admin/Userdetails';
+import Cart from './screens/Cart';
 const App = () => {
   return (
     <BrowserRouter>
@@ -23,6 +25,8 @@ const App = () => {
           <Route path="/register" element={<Signup/>} exact/>
           <Route path="/placeorder" element={<Placeorder/>} exact/>
           <Route path="/useradmin" element={<Useradmin/>} exact/>
+          <Route path="/userdetails" element={<Userdetails/>} exact/>
+          <Route path="/cart" element={<Cart/>} exact/>
          </Routes>
          </Container>
        </main>
