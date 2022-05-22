@@ -26,13 +26,13 @@ const Placeorder = () => {
                         <ListGroup variant='flush'>
                         <ListGroup.Item>
                         <Row>
-                            <Col>Airpods Wireless Bluetooth Headphones</Col>
-                            <Col>1 * $89.99 = $89.99</Col>
+                            <Col>RED SAREE-SILK SAREE</Col>
+                            <Col>1. RS.600</Col>
                         </Row>
                         <ListGroup.Item>
                         <Row>
-                            <Col>Logitech G-Series Gaming Series</Col>
-                            <Col>2 * $49.99 = $99.98</Col>
+                            <Col>PINK SAREE-SILK SAREE</Col>
+                            <Col>2. RS.600</Col>
                         </Row>
                 </ListGroup.Item>
                 </ListGroup.Item>
