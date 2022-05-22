@@ -8,8 +8,10 @@ const Placeorder = () => {
             <ListGroup variant="flush" className='mb-4'>
                 <ListGroup.Item className='mb-4'>
                 <Row>
-                    <Col className='mb-2'><h3 className='mb-3'>Shipping</h3>
-                    <span className='muted'>Address: 10 alangatanoor ,Naduvaneri,637504</span></Col>
+                    <Col className='mb-2'>
+                    <h3 className='mb-3'>Shipping</h3>
+                    <span className='muted'>Address: 10 alangatanoor ,Naduvaneri,637504</span>
+                    </Col>
                 </Row>
                 </ListGroup.Item>
                 <ListGroup.Item className='mb-4'>

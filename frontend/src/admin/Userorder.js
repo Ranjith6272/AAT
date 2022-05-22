@@ -31,7 +31,7 @@ const Useradmin = () => {
                             <td>8ds734bf7f39c73ffb3894fb</td>
                             <td>Nanthini</td>
                             <td>2022-05-21</td>
-                            <td>$500</td>
+                            <td>500</td>
                             <td>2022-05-21</td>
                             <td>
                                 <BsFillHandThumbsDownFill className='text-danger'/>
@@ -46,7 +46,7 @@ const Useradmin = () => {
                             <td>8ds734bf7f39c73ffb3894fb</td>
                             <td>Aliabhat</td>
                             <td>2022-05-15</td>
-                            <td>$1000</td>
+                            <td>1000</td>
                             <td>2022-05-15</td>
                             <td>
                                 <BsFillHandThumbsUpFill className='text-success'/>

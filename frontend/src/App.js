@@ -14,6 +14,7 @@ import Userdetails from './admin/Userdetails';
 import Userorder from './admin/Userorder';
 import Edituser from './admin/Edituser';
 import Cart from './screens/Cart';
+import Shipping from './screens/Shipping';
 const App = () => {
   return (
     <BrowserRouter>
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/userorder" element={<Userorder/>} exact/>
           <Route path="/edituser" element={<Edituser/>} exact/>
           <Route path="/cart" element={<Cart/>} exact/>
+          <Route path="/shipping" element={<Shipping/>} exact/>
          </Routes>
          </Container>
        </main>
