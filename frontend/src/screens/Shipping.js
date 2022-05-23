@@ -44,7 +44,7 @@ const Shipping = () => {
             <Form.Label>Add Notes(optional)</Form.Label>
             <Form.Control type="textarea" className='w-75' placeholder="Tell your suggestions to imporove our better" />
         </Form.Group>
-        <Link className='btn btn-dark my-3 mt-4' to='/'>
+        <Link className='btn btn-dark my-3 mt-4' to='/placeorder'>
            Place Order
         </Link>
         </Form>

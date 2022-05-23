@@ -78,9 +78,11 @@ const ProductScreen = ({match})=>{
              </Row>
              </ListGroup.Item>
              <ListGroupItem>
+               <Link to="/cart">
                 <Button className="btn-block" type="button">
                   Add To Cart
                 </Button>
+                </Link>
              </ListGroupItem>
            </ListGroup>
          </Card>

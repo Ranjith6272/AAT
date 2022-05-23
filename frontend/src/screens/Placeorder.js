@@ -1,4 +1,4 @@
-import React from 'react'
+import {React} from 'react'
 import {Row,Col,Card,ListGroup} from 'react-bootstrap'
 const Placeorder = () => {
   return (
@@ -74,7 +74,7 @@ const Placeorder = () => {
                     </Row>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                    <a href = "/" className='btn btn-dark btn-block text-uppercase'>Place order</a>
+                    <a href = "/success" className='btn btn-dark btn-block text-uppercase'>Place order</a>
                 </ListGroup.Item>
             </ListGroup>
             </Card>

@@ -82,7 +82,7 @@ const Cart = () => {
                     <span>₹600</span>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                    <a href='/placeorder' className='btn btn-dark text-uppercase'>Proceed to checkout</a>
+                    <a href='/shipping' className='btn btn-dark text-uppercase'>Proceed to checkout</a>
                 </ListGroup.Item>
             </ListGroup>
             </Card>
