@@ -1,5 +1,5 @@
 
-export const products =[
+const products =[
   {
     _id: '1',
     name: 'Red Floral Saree',
@@ -72,4 +72,6 @@ export const products =[
     rating: 5,
     numReviews: 7,
   },
-];
+]
+
+module.exports = products

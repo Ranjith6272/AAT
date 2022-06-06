@@ -1,4 +1,4 @@
-import {React,useState} from 'react'
+import React,{useState} from 'react'
 import {Row,Col,ListGroup,Card} from 'react-bootstrap'
 import {MdDelete} from 'react-icons/md'
 // import { Avatar } from 'primereact/avatar'; 

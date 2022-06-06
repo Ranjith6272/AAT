@@ -1,13 +1,21 @@
-import React,{useState} from 'react'
-import { Link,useParams } from 'react-router-dom';
+import React,{useState,useEffect} from 'react'
+import { Link, useParams} from 'react-router-dom';
 import {Row,Col,Image,ListGroup,Card,ListGroupItem,Button,Alert} from 'react-bootstrap'
 import Rating from '../components/Rating'
-import {products} from '../products'
+import axios from 'axios';
 
 const ProductScreen = ({match})=>{
-
-  const { id } = useParams();
-  const product = products.find((p)=> p._id === (id))
+  const [product,setProduct]= useState({})
+  let {id} = useParams();
+  useEffect(()=> {
+    const fetchProduct = async()=>{
+      const {data} = await axios.get(`/api/product/${id}`)
+      setProduct(data)
+    }
+    fetchProduct()
+  },[])
+  // const { id } = useParams();
+  // const product = products.find((p)=> p._id === (id))
   let [count, setCount] = useState(0);
 
   function incrementCount() {
@@ -23,7 +31,8 @@ const ProductScreen = ({match})=>{
       count=0;
     }
   }
-  return <>
+  return (
+    <div>
      <Link className='btn btn-dark my-3' to='/'>
        Go Back
      </Link>
@@ -100,7 +109,7 @@ const ProductScreen = ({match})=>{
             <Row>
              <span className='text-muted'>Yamini</span>
              <Rating value={product.rating}/>
-             <span className='text-muted'>2020-09-27</span>
+             <span className='text-muted'>2022-04-27</span>
             </Row>
             <Row>
             <p className='text-secondary'> These are great saree!</p>
@@ -110,7 +119,7 @@ const ProductScreen = ({match})=>{
             <Row>
              <span className='text-muted'>Ankita</span>
              <Rating value={product.rating}/>
-             <span className='text-muted'>2020-09-24</span>
+             <span className='text-muted'>2022-4-24</span>
             </Row>
             <Row>
             <p className='text-secondary'> Nice Color.I like it</p>
@@ -136,7 +145,8 @@ const ProductScreen = ({match})=>{
         </ListGroup>
        </Col>
      </Row>
-  </>
+     </div>
+  )
 }
 
 export default ProductScreen;
